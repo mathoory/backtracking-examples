@@ -20,8 +20,6 @@ int main()
 
     int color_map1[N][N] = {{1, -1, 1}, {-1, 1, -1}, {0, -1, 1}};
     printf("%d\n", FindMinimumNumDressColors(color_map1));
-    //    int color_map2[N][N] = {{1, 1, 1}, {-1, 1, -1}, {0, -1, 1}};
-    //  printf("%d\n", FindMinimumNumDressColors(color_map2));
     return 0;
 }
 
@@ -78,6 +76,7 @@ int max(int *arr, int n)
     }
     return max;
 }
+
 int first_larger_than_0(int *arr, int n)
 {
     for (int i = 0; i < n; ++i)
@@ -89,6 +88,7 @@ int first_larger_than_0(int *arr, int n)
     }
     return -1;
 }
+
 int min(int *arr, int n)
 {
     int min = first_larger_than_0(arr, n);
@@ -128,42 +128,6 @@ int solve(int color_map[N][N], int word[N], int index, int sol[N])
 
     return min(sol, N);
 }
-
-//
-//int solve(int color_map[N][N],
-//          int solution[N],
-//          int solution_index,
-//          int colors,
-//          int iteration)
-//{
-//    if (solution_index == colors)
-//    {
-//        bool is_valid = validation_check(color_map, solution);
-//        for (int j = 0; j < colors; j++)
-//        {
-//            printf("%d", solution[j]);
-//        }
-//        printf("\n");
-//
-//        printf("validate %d\n", (int) is_valid);
-//        return 1;
-//    }
-//
-//    if (iteration >= colors)
-//    {
-//        return 1;
-//    }
-//
-//    solution[iteration] = iteration;
-//
-//    solve(color_map, solution, solution_index+1, colors, iteration+1);
-//
-//    solve(color_map, solution, solution_index, colors, iteration+1);
-//
-//    return 1;
-//
-//}
-//
 
 int FindMinimumNumDressColors(int color_map[N][N])
 {
