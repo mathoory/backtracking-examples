@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.17)
+project(Examples_proj C)
+
+set(CMAKE_C_STANDARD 99)
+
+add_executable(binary_words_of_length_n binary_words_of_length_n.c)
+add_executable(permutations_from_0_to_K permutations_from_0_to_K.c)
+add_executable(unique_permutations_from_0_to_K unique_permutations_from_0_to_K.c)
+add_executable(unique_sum_permutations unique_sum_permutations.c)
+add_executable(subsum_of_group subsum_of_group.c)
+add_executable(n_queens n_queens.c)
+add_executable(burn burn.c)
+add_executable(maze maze.c)
+add_executable(knights knights.c)
+add_executable(coins coins.c)
+add_executable(parenthesis parenthesis.c)
